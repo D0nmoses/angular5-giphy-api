@@ -1,0 +1,31 @@
+
+  <section id="wrapper">
+    <div class="login-register" style="background-image:url(../assets/images/login-register.jpg);">
+      <div class="login-box card">
+        <div class="card-body">
+          <form class="form-horizontal form-material" name="loginForm" novalidate>
+            <h3 class="box-title m-b-20">Giriş Yap</h3>
+            <br>
+            <div class="form-group">
+              <div class="col-xs-12">
+                <input type="text" class="form-control" name="username" [(ngModel)]="username" required placeholder="Kullanıcı Adı" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-12">
+                <input type="password" class="form-control" name="password" [(ngModel)]="password" required placeholder="Şifre" />
+              </div>
+            </div>
+            <br>
+            <div class="form-group text-center">
+              <div class="col-xs-12 p-b-20">
+                <input type="submit" class="btn btn-block btn-lg btn-info btn-rounded" (click)="login()" value="Giriş" />
+              </div>
+              <br>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
